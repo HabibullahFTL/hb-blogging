@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/hb-blogging",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

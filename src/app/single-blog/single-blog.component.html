@@ -1,0 +1,19 @@
+
+<section class="showBlog"  *ngIf="blog$">
+    <div class="container py-5 mx-auto  ">
+        <div class="flex flex-col w-full mb-20">
+            <div class="w-4/5 border rounded p-10 m-auto">
+                <img src="{{blog$.photo}}" alt="" class="lg:w-1/2 w-full m-auto mb-3 rounded" />
+                <h1 class="sm:text-3xl text-2xl font-medium title-font my-4 text-gray-900">{{blog$.title}}</h1>
+                <p class="py-3">{{blog$.description}}</p>
+                <div class="mt-8 border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                        <img src="" alt="" />
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">{{blog$.createdBy.displayName}}</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
